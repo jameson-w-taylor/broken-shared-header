@@ -1,0 +1,7 @@
+{
+  "name": "broken-shared-header",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
