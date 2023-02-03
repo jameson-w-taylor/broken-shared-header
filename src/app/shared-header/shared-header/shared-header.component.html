@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar [color]="toolbarColor">
+    <ion-buttons slot="start">
+      <ion-menu-button *ngIf="showMenuButton"></ion-menu-button>
+      <ion-back-button [defaultHref]="defaultHref"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+  </ion-toolbar>
+  <ion-toolbar [color]="toolbarColor">
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+</ion-header>

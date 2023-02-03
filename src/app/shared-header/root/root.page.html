@@ -1,0 +1,10 @@
+<!--
+  Note:
+  No defaultHref is provided, since this is considered the "root" page, otherwise it would be REQURED for the ion-back-button to appear at all
+  This "requirement" is an example that the out-of-the-box functionality is broken when using a shared header component
+-->
+<app-shared-header [showMenuButton]="true" toolbarColor="primary" title="Broken Root"></app-shared-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button [routerLink]="['child']">Child Page</ion-button>
+</ion-content>

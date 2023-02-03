@@ -1,0 +1,11 @@
+<!--
+  Note:
+  Providing a defaultHref is REQURED for the ion-back-button to appear at all
+  If you try adding defaultHref="/shared-root" to app-header, then you'll see it appear (which shouldn't be needed in normal use)
+  This is an example of how the out-of-the-box functionality is broken when using a shared header component
+-->
+<app-shared-header toolbarColor="secondary" title="Broken Child"></app-shared-header>
+
+<ion-content>
+  <ion-button [routerLink]="['/shared-header']" routerDirection="back">Back</ion-button>
+</ion-content>
